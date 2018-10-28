@@ -140,7 +140,7 @@ export function arcBound(arc: Arc): Rect {
   // points where the derivative reaches zero.
   let maybeExtremaXs = [x1, x2], maybeExtremaYs = [y1, y2];
   for (const offset of [-2 * Math.PI, -Math.PI, 0, Math.PI, 2 * Math.PI]) {
-    const thetaX: number = thetaExtremaX + offset, thetaY: number = thetaExtremaY + offset;
+    const thetaX = thetaExtremaX + offset, thetaY = thetaExtremaY + offset;
     const ratioX = (thetaX - theta1) / dtheta, ratioY = (thetaY - theta1) / dtheta;
     if (ratioX > 0 && ratioX < 1) {
       maybeExtremaXs.push(rx * cosPhi * Math.cos(thetaX) - ry * sinPhi * Math.sin(thetaX) + cx);
