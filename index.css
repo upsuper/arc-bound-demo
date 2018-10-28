@@ -1,0 +1,51 @@
+#combinations {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.key {
+  margin-bottom: 20px;
+}
+.keyLabel {
+  margin-left: 0.75em;
+}
+
+.entry {
+  border: 1px solid #ccc;
+}
+
+.name {
+  width: 300px;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.page {
+  height: 300px;
+  width: 300px;
+}
+.axis {
+  stroke: black;
+  stroke-width: 0.01px;
+  stroke-dasharray: 0.05,0.05;
+}
+.ref {
+  fill: cyan;
+}
+.arc {
+  stroke: blue;
+  fill: none;
+  stroke-width: 0.1px;
+}
+.bound {
+  stroke: red;
+  fill: none;
+  stroke-width: 0.1px;
+}
+.center {
+  fill: green;
+}
+/* rtl:ignore */ .page {
+direction: ltr;
+}
